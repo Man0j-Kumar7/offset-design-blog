@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Newsreader', Georgia, Cambria, 'Times New Roman', Times, serif;
+
+  --color-plum: #241D2B;
+  --color-plum-dark: #1A1420;
+  --color-plum-surface: #2E2537;
+  --color-plum-border: #42364E;
+  
+  --color-ivory: #F2EBDD;
+  --color-ivory-light: #FAF6EE;
+  --color-ivory-surface: #EAE1D1;
+  --color-ivory-border: #DDD1BE;
+  
+  --color-terracotta: #B86F5A;
+  --color-terracotta-dark: #9F5946;
+  
+  --color-sage: #788276;
+  --color-sage-light: #8E988C;
+  
+  --color-taupe: #B8AA98;
+  --color-taupe-light: #D4C9BC;
+  --color-taupe-dark: #8F8170;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  blockquote, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Editorial subtle crop mark helper */
+.editorial-grid-lines {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(184, 170, 152, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(184, 170, 152, 0.08) 1px, transparent 1px);
+}
+
+.editorial-grid-dark {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(242, 235, 221, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(242, 235, 221, 0.04) 1px, transparent 1px);
+}
+
+/* Custom fine scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #241D2B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #42364E;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B86F5A;
+}

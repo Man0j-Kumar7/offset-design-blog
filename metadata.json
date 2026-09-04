@@ -1,0 +1,6 @@
+{
+  "name": "OFFSET",
+  "description": "A modern digital design magazine exploring the ideas, systems and people shaping the future of design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
